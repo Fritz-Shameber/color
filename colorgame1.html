@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Game</title>
+    <link rel="stylesheet" href="colorgame1.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Gambling Game</h1>
+        <div class="user-info">
+            <p>Balance: $<span id="balance">100</span></p>
+            <button id="logout-btn">Log Out</button>
+        </div>
+
+        <div class="game">
+            <h2>Choose a Color and Bet!</h2>
+            <p>Bet amount: $<input type="number" id="bet-amount" value="10" min="1"></p>
+            <div class="timer">
+                <p id="timer">Time Left: 10</p>
+            </div>
+            <div class="color-buttons">
+                <button class="color-btn" id="red-btn">Red</button>
+                <button class="color-btn" id="green-btn">Green</button>
+                <button class="color-btn" id="blue-btn">Blue</button>
+            </div>
+            <p id="result"></p>
+        </div>
+
+        <div class="transactions">
+            <h3>Transaction History</h3>
+            <ul id="transactions-list"></ul>
+        </div>
+    </div>
+    <script src="colorgame1.js"></script>
+</body>
+</html>
